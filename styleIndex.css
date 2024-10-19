@@ -1,0 +1,151 @@
+/* FORMATO BASE HASTA LÍNEA 47 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00ABD5; 
+}
+
+/* -------- HEADER Y BOTONES -------- */ 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white; 
+    color: black;
+    width: 100%; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 65px;
+    margin-right: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #000; 
+    padding: 10px 5px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    color: #4CAF50; 
+    text-decoration: underline; 
+}
+
+/* ------- CARRUSEL PRIMERA SECCIÓN  ------- */
+
+.carrusel {
+    width: 100%;
+    max-width: flex;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    background-color:  #3283FC; 
+}
+
+/* Botones de navegación en carrusel */
+.prev, .sig {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 80%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.sig {
+    right: 10px;
+}
+
+/* Puntos que indican la slide en la que está */
+.dots {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 10%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #3283FC;
+}
+
+
+
+
+
+
+/* ------- FOOTER --------          || Esto se ajusta después de las secciones del homepage ||
+footer {
+    background-color: #6694c5;
+    color: white;
+    padding: 40px; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: 5px solid #60c4bd; 
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+    text-align: right; 
+} */
+ 
+
