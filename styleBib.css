@@ -12,6 +12,54 @@ body {
 
 /* -------- HEADER Y BOTONES -------- */ 
 
+.libros-contenedor2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .libro2 {
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    color: #333; 
+    transition: transform 0.2s ease; 
+    text-align: center;
+  }
+
+  .libro2 a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}
+
+.libro2 h3{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.libro2 p{
+    margin-top: 0%;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.libro2 img {
+    width: 65%; 
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0%;
+    margin-top: 10px;
+    border: 1px solid #ccc; 
+}
+
+.libro2:hover {
+    transform: scale(1.05); 
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
