@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="images/iso.svg" type="image/svg">
+<title>ZENBRAIN</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styleIndex.css">
+</head>
+
+<body>
+
+    <!------------ Header ------------>
+    <header>
+        <div class="logo">
+            <img src="images/logoletras.svg" alt ="ZENBRAIN Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="estudio.html">Estudio</a></li>
+                <li><a href="#">Relajación</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!------------ Main Section ------------>
+    <main>
+        <div class="carrusel">
+            <div class="slides">
+                <div class="slide">Slide 1</div>
+                <div class="slide">Slide 2</div>
+                <div class="slide">Slide 3</div>
+            </div>
+    
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="sig" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </main>
+
+    <!------------ Footer ------------>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
