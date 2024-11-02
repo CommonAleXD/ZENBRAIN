@@ -126,26 +126,53 @@ nav ul li a:hover{
 }
 
 
-
-
-
-
-/* ------- FOOTER --------          || Esto se ajusta después de las secciones del homepage ||
+/* ------- FOOTER -------- */
 footer {
-    background-color: #6694c5;
-    color: white;
-    padding: 40px; 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    border-top: 5px solid #60c4bd; 
+  background-color: white; /* Fondo blanco */
+  padding: 20px;
+  border-top: 1px solid #ccc; /* Línea separadora opcional */
+  bottom: 0;
 }
 
-.footer-section {
-    flex: 1;
-    margin-right: 20px;
-    text-align: right; 
-} */
+.footer-content {
+  max-width: fit-content;
+  margin: 0 auto;
+  text-align: right; /* Alinear contenido a la derecha */
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 12px; /* Tamaño de letra reducido */
+  color: gray; /* Color gris para el texto */
+  text-align: center; /* Centro del texto */
+}
+
+.footer-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Eliminar márgenes del ul */
+  display: flex; /* Usar flexbox para alinear los elementos */
+  justify-content: flex-end; /* Alinear a la derecha */
+}
+
+.footer-content li {
+  margin: 0 15px; /* Espaciado horizontal entre elementos */
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: gray; /* Color gris para los enlaces */
+  font-size: 12px; /* Tamaño de letra reducido */
+}
+
+.footer-content a:hover {
+  color: rgb(0, 166, 255); /* Cambia a azul al pasar el mouse */
+}
+
+/* Cambiar color de texto seleccionable a azul */
+.footer-content ::selection {
+  background-color: lightblue; /* Color de fondo al seleccionar */
+  color: rgb(0, 170, 255); /* Color del texto seleccionado */
+}
  
 
