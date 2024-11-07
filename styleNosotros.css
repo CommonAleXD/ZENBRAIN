@@ -1,3 +1,4 @@
+/* FORMATO BASE */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,34 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #00ABD5; /* Fondo gris para toda la página */
+    background-image: url('images/relax.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00abd5;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: -1;
 }
 
 /* -------- HEADER Y BOTONES -------- */ 
