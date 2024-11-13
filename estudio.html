@@ -6,6 +6,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styleEstudio.css">
+<script src="scriptEstudio.js"></script>
 </head>
 
 <body>
@@ -26,6 +27,104 @@
             </ul>
         </nav>
     </header>
+   
+    <!-- Sección de información alternada -->
+    
+    <section class="info-section">
+        <div class="info-section">
+            <!-- Otros info-blocks -->
+        
+            <div class="music-block">
+                <div class="music-player">
+                    <img id="song-image" src="images/relax.jpg" alt="Imagen de la canción">
+                    <h4 id="song-title">Canción 1</h4>
+                    <audio id="audio-player">
+                        <source id="audio-source" src="canciones/song1.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                    <div class="controls">
+                        <button onclick="prevSong()">
+                            <img src="images/previous.png" alt="Anterior">
+                        </button>
+                        <button id="play-pause-button" onclick="playPause()">
+                            <img src="images/play.png" alt="Play" id="play-icon">
+                            <img src="images/pause.png" alt="Pause" id="pause-icon" style="display: none;">
+                        </button>
+                        <button onclick="nextSong()">
+                            <img src="images/next.png" alt="Siguiente">
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="music-text">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="info-block">
+            <div class="info-text">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus. Aliquam et consectetur magna, eu molestie purus. Donec posuere dictum nunc quis euismod. Duis in quam non quam ornare tristique quis placerat mauris. Nullam rhoncus neque consequat accumsan rutrum. Praesent efficitur semper pharetra. Aenean in laoreet erat, sit amet vulputate augue.
+
+                    Proin interdum ultrices interdum. Mauris aliquam maximus libero sit amet viverra. Fusce quam velit, malesuada bibendum erat sed, placerat aliquet augue. Aliquam porta pharetra tincidunt. Praesent dictum mauris id mi auctor pellentesque. Vestibulum odio ipsum, aliquet id enim nec, laoreet convallis massa. Sed vel massa eget diam dapibus convallis.
+                    
+                    In consequat massa ut risus egestas, id viverra elit laoreet. Pellentesque rhoncus et lacus ut placerat. Pellentesque sit amet posuere mauris. Vivamus erat nisl, lacinia in tempus ut, blandit a dolor. Mauris at ultrices augue. Mauris sed leo elit. Cras at iaculis lorem, in tempor ipsum. Integer maximus neque non malesuada venenatis. Nullam cursus placerat nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent risus augue, lacinia vel luctus sed, ultrices eget lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis malesuada est, malesuada vulputate dui.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus. Aliquam et consectetur magna, eu molestie purus. Donec posuere dictum nunc quis euismod. Duis in quam non quam ornare tristique quis placerat mauris. Nullam rhoncus neque consequat accumsan rutrum. Praesent efficitur semper pharetra. Aenean in laoreet erat, sit amet vulputate augue.
+                </p>
+            </div>
+            <div class="info-image">
+                <img src="images/relax.jpg" alt="Imagen descriptiva 2">
+            </div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-image">
+                <img src="images/relax.jpg" alt="Imagen descriptiva 1">
+            </div>
+            <div class="info-text">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus. Aliquam et consectetur magna, eu molestie purus. Donec posuere dictum nunc quis euismod. Duis in quam non quam ornare tristique quis placerat mauris. Nullam rhoncus neque consequat accumsan rutrum. Praesent efficitur semper pharetra. Aenean in laoreet erat, sit amet vulputate augue.
+
+                    Proin interdum ultrices interdum. Mauris aliquam maximus libero sit amet viverra. Fusce quam velit, malesuada bibendum erat sed, placerat aliquet augue. Aliquam porta pharetra tincidunt. Praesent dictum mauris id mi auctor pellentesque. Vestibulum odio ipsum, aliquet id enim nec, laoreet convallis massa. Sed vel massa eget diam dapibus convallis.
+                    
+                    In consequat massa ut risus egestas, id viverra elit laoreet. Pellentesque rhoncus et lacus ut placerat. Pellentesque sit amet posuere mauris. Vivamus erat nisl, lacinia in tempus ut, blandit a dolor. Mauris at ultrices augue. Mauris sed leo elit. Cras at iaculis lorem, in tempor ipsum. Integer maximus neque non malesuada venenatis. Nullam cursus placerat nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent risus augue, lacinia vel luctus sed, ultrices eget lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis malesuada est, malesuada vulputate dui.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus. Aliquam et consectetur magna, eu molestie purus. Donec posuere dictum nunc quis euismod. Duis in quam non quam ornare tristique quis placerat mauris. Nullam rhoncus neque consequat accumsan rutrum. Praesent efficitur semper pharetra. Aenean in laoreet erat, sit amet vulputate augue.
+                </p>
+                </div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-text">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus. Aliquam et consectetur magna, eu molestie purus. Donec posuere dictum nunc quis euismod. Duis in quam non quam ornare tristique quis placerat mauris. Nullam rhoncus neque consequat accumsan rutrum. Praesent efficitur semper pharetra. Aenean in laoreet erat, sit amet vulputate augue.
+
+                    Proin interdum ultrices interdum. Mauris aliquam maximus libero sit amet viverra. Fusce quam velit, malesuada bibendum erat sed, placerat aliquet augue. Aliquam porta pharetra tincidunt. Praesent dictum mauris id mi auctor pellentesque. Vestibulum odio ipsum, aliquet id enim nec, laoreet convallis massa. Sed vel massa eget diam dapibus convallis.
+                    
+                    In consequat massa ut risus egestas, id viverra elit laoreet. Pellentesque rhoncus et lacus ut placerat. Pellentesque sit amet posuere mauris. Vivamus erat nisl, lacinia in tempus ut, blandit a dolor. Mauris at ultrices augue. Mauris sed leo elit. Cras at iaculis lorem, in tempor ipsum. Integer maximus neque non malesuada venenatis. Nullam cursus placerat nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent risus augue, lacinia vel luctus sed, ultrices eget lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis malesuada est, malesuada vulputate dui.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus. Aliquam et consectetur magna, eu molestie purus. Donec posuere dictum nunc quis euismod. Duis in quam non quam ornare tristique quis placerat mauris. Nullam rhoncus neque consequat accumsan rutrum. Praesent efficitur semper pharetra. Aenean in laoreet erat, sit amet vulputate augue.
+                </p>
+            </div>
+            <div class="info-image">
+                <img src="images/relax.jpg" alt="Imagen descriptiva 2">
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!------------ Footer ------------>
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="nosotros.html">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <p>© 2024 ZenBrain. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 
 </body>
