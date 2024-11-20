@@ -31,85 +31,159 @@
     <!-- Sección de información alternada -->
     
     <section class="info-section">
+
+        <div class="info-block">
+            <div class="info-text">
+                <h2>Metodologías y Técnicas de Estudio</h2>
+                <p>
+                    En este apartado te presentaremos <strong>metodologías y técnicas de estudio que mejorarán tu rendimiento académico</strong>, te ayudarán a aprender de forma más efectiva y reducirán el estrés. Con el enfoque adecuado, puedes estudiar de manera más organizada y tranquila, evitando la frustración. Estas técnicas están diseñadas para optimizar tu tiempo y mejorar tu comprensión, haciéndote sentir más seguro y menos agotado. 
+                </p>
+                <p>
+                    Además, encontrarás una <strong>playlist de música</strong> seleccionada para ayudarte a estudiar de forma calmada y enfocada, creando un ambiente ideal para concentrarte y disfrutar del aprendizaje.
+                </p>
+            </div>
+            <div class="info-image">
+                <img src="Estudio/Introducción.png" alt="Imagen descriptiva 2">
+            </div>
+        </div>
         <div class="info-section">
-            <!-- Otros info-blocks -->
         
             <div class="music-block">
-                <div class="music-player">
+                <!-- Imagen de la canción -->
+                <div class="music-image">
                     <img id="song-image" src="images/relax.jpg" alt="Imagen de la canción">
-                    <h4 id="song-title">Canción 1</h4>
+                </div>
+            
+                <!-- Controles multimedia -->
+                <div class="music-controls">
                     <audio id="audio-player">
                         <source id="audio-source" src="canciones/song1.mp3" type="audio/mpeg">
                         Tu navegador no soporta el elemento de audio.
                     </audio>
                     <div class="controls">
-                        <button onclick="prevSong()">
-                            <img src="images/previous.png" alt="Anterior">
-                        </button>
-                        <button id="play-pause-button" onclick="playPause()">
-                            <img src="images/play.png" alt="Play" id="play-icon">
-                            <img src="images/pause.png" alt="Pause" id="pause-icon" style="display: none;">
-                        </button>
-                        <button onclick="nextSong()">
-                            <img src="images/next.png" alt="Siguiente">
-                        </button>
+                        <img src="images/previous.png" alt="Previous" onclick="prevSong()">
+                        <img src="images/play.png" alt="Play/Pause" id="play-pause-button" onclick="playPause()">
+                        <img src="images/next.png" alt="Next" onclick="nextSong()">
                     </div>
                 </div>
-                
-                <div class="music-text">
-                    <h3>Lorem ipsum</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus.
-                    </p>
+                <!-- Controles de volumen -->
+                <div class="volume-control">
+                    <label for="volume-slider">Volumen</label>
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" onchange="adjustVolume()">
+                </div>
+
+                <!-- Lista de canciones -->
+                <div class="music-list">
+                    <h4>PlayList</h4>
+                    <ul id="song-list">
+                        
+                    </ul>
                 </div>
             </div>
         </div>
+    </section>
+        </div>
         <div class="info-block">
             <div class="info-text">
-                <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus. Aliquam et consectetur magna, eu molestie purus. Donec posuere dictum nunc quis euismod. Duis in quam non quam ornare tristique quis placerat mauris. Nullam rhoncus neque consequat accumsan rutrum. Praesent efficitur semper pharetra. Aenean in laoreet erat, sit amet vulputate augue.
-
-                    Proin interdum ultrices interdum. Mauris aliquam maximus libero sit amet viverra. Fusce quam velit, malesuada bibendum erat sed, placerat aliquet augue. Aliquam porta pharetra tincidunt. Praesent dictum mauris id mi auctor pellentesque. Vestibulum odio ipsum, aliquet id enim nec, laoreet convallis massa. Sed vel massa eget diam dapibus convallis.
-                    
-                    In consequat massa ut risus egestas, id viverra elit laoreet. Pellentesque rhoncus et lacus ut placerat. Pellentesque sit amet posuere mauris. Vivamus erat nisl, lacinia in tempus ut, blandit a dolor. Mauris at ultrices augue. Mauris sed leo elit. Cras at iaculis lorem, in tempor ipsum. Integer maximus neque non malesuada venenatis. Nullam cursus placerat nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent risus augue, lacinia vel luctus sed, ultrices eget lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis malesuada est, malesuada vulputate dui.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus. Aliquam et consectetur magna, eu molestie purus. Donec posuere dictum nunc quis euismod. Duis in quam non quam ornare tristique quis placerat mauris. Nullam rhoncus neque consequat accumsan rutrum. Praesent efficitur semper pharetra. Aenean in laoreet erat, sit amet vulputate augue.
+                <h2>Método de SQ3R (Survey, Question, Read, Recite, Review)</h2>
+                <p>
+                    El Método de SQ3R es una técnica de estudio que favorece una <strong>comprensión profunda y activa de los textos.</strong> Este método está diseñado para estudiar textos largos, como libros o artículos científicos. El método se compone de cinco pasos:
                 </p>
+                <ul>
+                    <li><strong>Survey (Inspección):</strong> Realiza una revisión rápida del contenido antes de leer en profundidad. Esto te permitirá obtener una visión general del texto.</li>
+                    <li><strong>Question (Pregunta):</strong> Formula preguntas sobre lo que vas a estudiar. Esto activa tu mente y te prepara para buscar respuestas mientras lees.</li>
+                    <li><strong>Read (Lectura):</strong> Lee el texto buscando respuestas a las preguntas que planteaste. La lectura activa te ayuda a captar los detalles más importantes.</li>
+                    <li><strong>Recite (Recitar):</strong> Después de leer, intenta responder a las preguntas con tus propias palabras, lo que refuerza la comprensión y retención de la información.</li>
+                    <li><strong>Review (Revisar):</strong> Revisa frecuentemente lo aprendido para consolidar la información en tu memoria a largo plazo.</li>
+                </ul>     
+                <p>
+                    Este método no solo ayuda a profundizar en la lectura, sino que también favorece la retención y comprensión a través de la formulación de preguntas y la revisión continua.
+                </p>             
             </div>
             <div class="info-image">
-                <img src="images/relax.jpg" alt="Imagen descriptiva 2">
+                <img src="Estudio/Método de SQ3R.png" alt="Imagen descriptiva 2">
             </div>
         </div>
 
         <div class="info-block">
             <div class="info-image">
-                <img src="images/relax.jpg" alt="Imagen descriptiva 1">
+                <img src="Estudio/Tecnica Pomodoro.png" alt="Imagen descriptiva 1">
             </div>
             <div class="info-text">
-                <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus. Aliquam et consectetur magna, eu molestie purus. Donec posuere dictum nunc quis euismod. Duis in quam non quam ornare tristique quis placerat mauris. Nullam rhoncus neque consequat accumsan rutrum. Praesent efficitur semper pharetra. Aenean in laoreet erat, sit amet vulputate augue.
-
-                    Proin interdum ultrices interdum. Mauris aliquam maximus libero sit amet viverra. Fusce quam velit, malesuada bibendum erat sed, placerat aliquet augue. Aliquam porta pharetra tincidunt. Praesent dictum mauris id mi auctor pellentesque. Vestibulum odio ipsum, aliquet id enim nec, laoreet convallis massa. Sed vel massa eget diam dapibus convallis.
-                    
-                    In consequat massa ut risus egestas, id viverra elit laoreet. Pellentesque rhoncus et lacus ut placerat. Pellentesque sit amet posuere mauris. Vivamus erat nisl, lacinia in tempus ut, blandit a dolor. Mauris at ultrices augue. Mauris sed leo elit. Cras at iaculis lorem, in tempor ipsum. Integer maximus neque non malesuada venenatis. Nullam cursus placerat nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent risus augue, lacinia vel luctus sed, ultrices eget lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis malesuada est, malesuada vulputate dui.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus. Aliquam et consectetur magna, eu molestie purus. Donec posuere dictum nunc quis euismod. Duis in quam non quam ornare tristique quis placerat mauris. Nullam rhoncus neque consequat accumsan rutrum. Praesent efficitur semper pharetra. Aenean in laoreet erat, sit amet vulputate augue.
+                <h2>Técnica Pomodoro</h2>
+                <p>
+                    La Técnica Pomodoro es un método eficaz para <strong>mantener la concentración en tareas largas y combatir la procrastinación.</strong> Se basa en dividir el tiempo de estudio en bloques de 25 minutos, conocidos como Pomodoros, seguidos de breves descansos de 5 minutos. Este enfoque es ideal para quienes tienen dificultades para mantener el enfoque o necesitan estudiar durante varias horas seguidas.
+                </p>
+                <p>
+                    Después de completar cuatro Pomodoros, es recomendable tomar un descanso más largo de entre 15 y 30 minutos. Esta técnica ayuda a mejorar la gestión del tiempo y a evitar el agotamiento, favoreciendo un enfoque más efectivo y productivo en el estudio.
                 </p>
                 </div>
         </div>
 
         <div class="info-block">
             <div class="info-text">
-                <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus. Aliquam et consectetur magna, eu molestie purus. Donec posuere dictum nunc quis euismod. Duis in quam non quam ornare tristique quis placerat mauris. Nullam rhoncus neque consequat accumsan rutrum. Praesent efficitur semper pharetra. Aenean in laoreet erat, sit amet vulputate augue.
-
-                    Proin interdum ultrices interdum. Mauris aliquam maximus libero sit amet viverra. Fusce quam velit, malesuada bibendum erat sed, placerat aliquet augue. Aliquam porta pharetra tincidunt. Praesent dictum mauris id mi auctor pellentesque. Vestibulum odio ipsum, aliquet id enim nec, laoreet convallis massa. Sed vel massa eget diam dapibus convallis.
-                    
-                    In consequat massa ut risus egestas, id viverra elit laoreet. Pellentesque rhoncus et lacus ut placerat. Pellentesque sit amet posuere mauris. Vivamus erat nisl, lacinia in tempus ut, blandit a dolor. Mauris at ultrices augue. Mauris sed leo elit. Cras at iaculis lorem, in tempor ipsum. Integer maximus neque non malesuada venenatis. Nullam cursus placerat nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent risus augue, lacinia vel luctus sed, ultrices eget lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis malesuada est, malesuada vulputate dui.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec est aliquam, pulvinar arcu a, pellentesque turpis. Maecenas pretium eu est sit amet dictum. Pellentesque justo turpis, volutpat eu commodo sit amet, sagittis et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum enim vel viverra maximus. Aliquam et consectetur magna, eu molestie purus. Donec posuere dictum nunc quis euismod. Duis in quam non quam ornare tristique quis placerat mauris. Nullam rhoncus neque consequat accumsan rutrum. Praesent efficitur semper pharetra. Aenean in laoreet erat, sit amet vulputate augue.
+                <h2>Método Feynman</h2>
+                <p>
+                    El Método Feynman es una técnica que consiste en estudiar un tema <strong>explicándolo como si se lo enseñaras a otra persona.</strong> Este enfoque te obliga a simplificar los conceptos y a identificar cualquier área en la que no entiendas completamente, lo que te permite abordar esas dudas y reforzar tu comprensión. Es especialmente útil para entender conceptos complejos o abstractos, como los que se encuentran en matemáticas, física o programación.
+                </p>
+                <p>
+                    Al explicar el tema de manera sencilla y clara, el Método Feynman no solo ayuda a identificar lagunas en tu conocimiento, sino que también asegura que realmente dominas lo que estás aprendiendo. Es ideal para quienes necesitan demostrar dominio profundo sobre un tema o para aclarar conceptos que inicialmente parecen difíciles de comprender.
                 </p>
             </div>
             <div class="info-image">
-                <img src="images/relax.jpg" alt="Imagen descriptiva 2">
+                <img src="Estudio/Feynman.png" alt="Imagen descriptiva 2">
             </div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-image">
+                <img src="Estudio/Estudio Espaciado.png" alt="Imagen descriptiva 2">
+            </div>
+            <div class="info-text">
+                <h2>Estudio Espaciado (Spaced Repetition)</h2>
+                <p>
+                    El Estudio Espaciado (Spaced Repetition) es una técnica diseñada para mejorar la <strong>retención de información a largo plazo.</strong> Consiste en revisar el material en intervalos crecientes de tiempo, lo que refuerza la memoria y facilita la retención de datos. Este método es ideal para memorizar información como fechas, fórmulas, vocabulario o conceptos que requieren ser recordados por largo tiempo.
+                </p>
+                <p>
+                    Es especialmente útil cuando te preparas para exámenes acumulativos o estudias idiomas, ya que permite mantener fresca la información a medida que se va aprendiendo, ayudando a consolidar los recuerdos de forma más efectiva a lo largo del tiempo.
+                </p>
+            </div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-text">
+                <h2>Técnica de Cornell</h2>
+                <p>
+                    La Técnica de Cornell es un método efectivo para tomar notas organizadas y claras. Consiste en dividir la hoja en tres secciones:
+                </p>
+                <ul>
+                    <li><strong>Notas:</strong> Donde se escriben las ideas principales.</li>
+                    <li><strong>Preguntas:</strong> Donde formulas preguntas relacionadas con el contenido para reflexionar sobre lo aprendido.</li>
+                    <li><strong>Resumen:</strong> Al final, escribes un resumen del tema en tus propias palabras.</li>
+                </ul>
+                <p>
+                    Este enfoque facilita la organización de la información y es particularmente útil durante clases o conferencias. Es ideal para temas que requieren ser sintetizados y comprendidos de manera concisa, como ciencias sociales, derecho o medicina.
+                </p>
+            </div>
+            <div class="info-image">
+                <img src="Estudio/Cornell.png" alt="Imagen descriptiva 2">
+            </div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-image">
+                <img src="Estudio/Visualización y Asociaciones.png" alt="Imagen descriptiva 2">
+            </div>
+            <div class="info-text">
+                <h2>Chunking (Agrupamiento)</h2>
+                <p>
+                    El Chunking (Agrupamiento) es una técnica que facilita la <strong>memorización dividiendo la información en bloques pequeños y significativos.</strong> Esta estrategia hace que los datos complejos o secuenciales sean más fáciles de recordar al agruparlos en unidades más manejables.
+                </p>
+                <p>
+                    Es especialmente útil cuando necesitas memorizar listas, números o pasos de un proceso, y es ideal para materias como química, anatomía o informática, donde los detalles o secuencias deben ser recordados de manera precisa.
+                </p>
+            </div>
+            
         </div>
     </div>
     </section>
