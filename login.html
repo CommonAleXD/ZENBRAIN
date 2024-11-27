@@ -27,9 +27,11 @@
         </nav>
     </header>
 
-    <!------------ Login Section ------------>
-    <div class="login-container">
-        <div class="login-card">
+<!------------ Login Section ------------>
+<div class="login-container">
+    <div class="card-container">
+        <!-- Formulario de Inicio de Sesión -->
+        <div class="login-card login">
             <div class="logo-login">
                 <img src="images/iso.svg" alt="ZenBrain Logo">
             </div>
@@ -45,12 +47,42 @@
                 </div>
                 <button type="submit" class="btn-submit">Iniciar Sesión</button>
                 <div class="extra-options">
-                    <a href="#">¿Olvidaste tu contraseña?</a>
-                    <a href="#">Crear una cuenta</a>
+                    <a href="#" onclick="mostrarPopUp()">¿Olvidaste tu contraseña?</a>
+                    <a href="#" onclick="rotarFormulario()">Crear una cuenta</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Formulario de Registro -->
+        <div class="login-card registro">
+            <div class="logo-login">
+                <img src="images/iso.svg" alt="ZenBrain Logo">
+            </div>
+            <h1>Regístrate</h1>
+            <form>
+                <div class="input-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="input-group">
+                    <label for="email-registro">Correo Electrónico</label>
+                    <input type="email" id="email-registro" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="password-registro">Contraseña</label>
+                    <input type="password" id="password-registro" placeholder="********" required>
+                </div>
+                <button type="submit" class="btn-submit">Crear Cuenta</button>
+                <div class="extra-options">
+                    <a href="#" onclick="rotarFormulario()">Ya tengo cuenta</a>
                 </div>
             </form>
         </div>
     </div>
+</div>
+
+
+
 
     <!------------ Footer ------------>
     <!-- <footer>
@@ -63,6 +95,17 @@
             <p>© 2024 ZenBrain. Todos los derechos reservados.</p>
         </div>
     </footer> -->
+
+    <script>
+        function mostrarPopUp() {
+            alert("Ya ni modo");
+        }
+
+        function rotarFormulario() {
+            const container = document.querySelector('.card-container');
+            container.classList.toggle('rotar');
+        }
+    </script>
 </body>
 </html>
 
