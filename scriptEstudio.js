@@ -28,6 +28,7 @@ function playSong(index) {
     const audioSource = document.getElementById("audio-source");
     const songImage = document.getElementById("song-image");
     const songList = document.getElementById("song-list");
+    const playPauseButton = document.getElementById("play-pause-button");
 
     const previousSong = songList.querySelector(".highlighted");
     if (previousSong) {
@@ -48,6 +49,8 @@ function playSong(index) {
 
     audioPlayer.load();
     audioPlayer.play();
+
+    playPauseButton.src = 'images/pause.png';
 }
 
 function playPause() {
