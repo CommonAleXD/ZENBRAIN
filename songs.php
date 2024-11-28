@@ -19,8 +19,8 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     $songs = [];
     while ($row = $result->fetch_assoc()) {
-        $row['mp3'] = "../Zenbrain/Musica/" . $row['mp3']; //Cambia por la ubicación de la musica (Recomiendo ponerla donde mismo)
-        $row['imagen'] = "../Zenbrain/Musica/" . $row['imagen'];//Cambia por la ubicación de la imagen (Recomiendo ponerla donde mismo)
+        $row['mp3'] = "Musica/" . $row['mp3']; //Cambia por la ubicación de la musica (Recomiendo ponerla donde mismo)
+        $row['imagen'] = "Musica/" . $row['imagen'];//Cambia por la ubicación de la imagen (Recomiendo ponerla donde mismo)
         $songs[] = $row;
     }
     echo json_encode($songs);

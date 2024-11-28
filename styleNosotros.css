@@ -73,6 +73,16 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
 /* ------- Sección nosotros  -----------*/
 .wrapper {
     flex: 1;

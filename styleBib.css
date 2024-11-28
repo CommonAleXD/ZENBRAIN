@@ -258,9 +258,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00adb0;
-    border-bottom: 2px solid #00adb0;
-    transition: color 0.3s, border-bottom 0.3s;
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #4CAF50;
 }
 
 
